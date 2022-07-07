@@ -16,4 +16,4 @@ navigation using Flexbox and JS.
 
 ### Links
 
-- Live Site URL: [Live site URL](https://itachidorri.github.io/webpage-flexbox/)
+- [Live site URL](https://itachidorri.github.io/responsive-webpage-flexbox/)
