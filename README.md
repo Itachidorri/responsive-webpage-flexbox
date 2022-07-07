@@ -1,6 +1,6 @@
 # Responsive Webpage /Flexbox /JS
 
-This is an webpage built using Flexbox & JS.
+This is a webpage built using Flexbox & JS.
 
 
 ## Overview
