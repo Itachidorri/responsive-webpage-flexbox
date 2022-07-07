@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="author" content="shyamsundar">
+    <title>Navigation using Flexbox</title>
+    <link rel="stylesheet" href="css/flexbox-layout-3.css">
+    <script src="js/flexbox-layout-3.js" defer></script>
+  </head>
+
+  <body>
+    <div class="navbar-container flex">
+      <div class="logo navbar-ends">
+        Logo
+      </div>
+
+      <button class="mobile-nav-toggle" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav data-visible="false" class="primary-navbar flex">
+        <ul class="primary-navigation flex">
+          <li>Home</li>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+
+        <button class=" button">Get started</button>
+      </nav>
+    </div>
+
+    <header class="page-padding">
+      <div class="flex-container flex">
+        <div class="content flex">
+          <h1>Digital <br>Universe</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla .</p>
+        </div>
+
+        <div class="content-img"></div>
+      </div>
+    </header>
+
+    <section class="services page-margin flex">
+      <div class="flex-item background-cover-center">
+      </div>
+
+      <div class="flex-item flex">
+        <div class="flex-sub-item background-cover-center">
+        </div>
+        <div class="flex-sub-item background-cover-center">
+        </div>
+      </div>
+
+      <div class="flex-item flex">
+        <div class="content-services flex">
+          <h2>Devoted to excellence</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit, sed do eiusmod tempor incididunt ut labore et
+             dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip
+               ex ea commodo consequat. Duis aute irure dolor in
+               reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat
+                 cupidatat non proident, sunt in culpa
+             qui officia deserunt mollit anim id est laborum.</p>
+          <button class="button learn-more-btn"><span class="capitalize">Learn more</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3 page-padding">
+      <p class="flex">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.</p>
+    </section>
+  </body>
+</html>
