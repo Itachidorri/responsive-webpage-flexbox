@@ -1,0 +1,252 @@
+/* resetting all margins and paddings */
+*{
+  margin:0;
+  padding: 0;
+}
+
+/*utility classes*/
+.flex{
+  display: flex;
+}
+
+.sr-only{
+  position: absolute;
+  left: -100vw;
+}
+
+.navbar-ends{
+  flex-basis: 6em;
+}
+
+.page-padding,.page-margin{
+  padding: 3.8em min(6vw,4em);
+}
+
+.background-cover-center{
+  background-size: cover;
+  background-position: center;
+}
+
+body{
+  font-family:  Georgia, Times, "Times New Roman", serif;
+  overflow-x: hidden;
+}
+
+/*styling navigation bar*/
+.navbar-container{
+  padding: 2vh 2vw;
+  font-size: 1.2rem;
+  align-items: center;
+  height: 6vh;
+}
+
+.primary-navbar{
+  flex:1;
+  justify-content: space-between;
+}
+
+.primary-navigation{
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+.button{
+  padding: .5em;
+  font-family:  Georgia, Times, "Times New Roman", serif;
+  font-size: 1em;
+  background-color: rgb(49, 60, 125);
+  border-radius: 5px;
+  border: 0;
+  color: white;
+}
+
+/*styling header section*/
+header{
+  background-color: rgb(184, 217, 210);
+}
+
+.flex-container{
+  min-height: 80vh;
+}
+
+.flex-container>*{
+  background-color: white;
+  padding: 2vh min(6vw,4em);
+  flex: 0 1 50%;
+}
+
+.content{
+  flex-direction: column;
+  justify-content: center;
+  gap:1em;
+}
+
+.content h1{
+  font-size:4em;
+}
+
+p{
+  line-height: 1.4;
+}
+
+.content-img{
+  background-image: url(../img/bhaktapur-durbar-square.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+@media (max-width:52em) {
+  .primary-navbar{
+    position: fixed;
+    inset: 0 0 0 30%;
+    background-color: rgba(5, 5, 5, 0.9);
+    flex-direction: column;
+    color: white;
+    padding: min(30vh,10rem) 2em 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: min(6vh,4rem);
+    z-index:1000;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+
+  .primary-navbar[data-visible="true"]{
+    transform: translateX(0%);
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .primary-navbar{
+      background-color: rgba(5, 5, 5, 0.1);
+      backdrop-filter: blur(1rem);
+    }
+  }
+
+  .primary-navigation{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: min(6vh,2rem);
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: min-content;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    top:3vh;
+    right: 2rem;
+    width: 2rem;
+    aspect-ratio: 1;
+    color: transparent;
+    background-image: url(../img/burger-icon.png);
+    background-size: cover;
+    background-color: transparent;
+    border:none;
+    z-index: 9999;
+  }
+
+  nav{
+    flex: 0 1 0;
+  }
+
+  .flex-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .content-img{
+    min-height: 36em;
+  }
+}
+
+@media (max-width:25em) {
+  .content h1{
+    font-size: 3em;
+  }
+}
+
+
+/*Styling services section of the webpage*/
+.services{
+  min-height: 90vh;
+  background-color: rgb(49, 60, 125);
+}
+
+.flex-item{
+  background-color: rgb(219, 159, 154);
+  flex: 0 1 33.33%;
+}
+
+.flex-sub-item{
+  flex: 0 1 50%;
+}
+
+.flex-item:nth-child(1){
+  background-image: url(../img/radhe-shyam-2.jpg);
+}
+
+.flex-item:nth-child(2){
+  flex-direction: column;
+}
+
+.flex-sub-item:nth-child(1){
+  background-image: url(../img/krishna.jpg);
+}
+
+.flex-sub-item:nth-child(2){
+  background-image: url(../img/radharani.jpg);
+  background-size: cover;
+}
+
+.content-services{
+  padding: 8vh min(6vw,2em);
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+}
+
+h2{
+  color: rgb(11, 4, 135);
+}
+
+.learn-more-btn{
+  width: 8em;
+  border-radius: 0;
+}
+
+@media(max-width: 60em){
+  .services{
+    flex-direction: column;
+  }
+}
+
+/*styling section 3*/
+.section-3{
+  min-height: 40vh;
+  background-color: rgb(219, 159, 154);
+  justify-content: center;
+  text-align: center;
+}
+
+.section-3 p{
+  font-weight: bold;
+  font-size: 2em;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 75%;
+}
+
+/**/
