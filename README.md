@@ -33,10 +33,15 @@ navigation using Flexbox and JS.
 
 
 ## My process
-1. Building the html structure for the project using references.
-2. Adding CSS.
-3. Finding solution to errors on google, documentations & developer communities.
-4. Implementing solutions.
+
+1. Map out the html structure for the project.
+2. Adding CSS & JS.
+3. Used utility classes in CSS.
+4. Used 'data-attributes' for responsive navigation.
+5. Used Media queries
+6. Fixed specificity issues.
+7. Finding solution to errors on google, documentations & developer communities.
+8. Implementing solutions.
 
 
 ### Built with
@@ -92,6 +97,14 @@ New CSS properties:
 1. z-index: sets stack order of elements and an element with greater stack order is always in front of an element with a lower stack order.
 2. .'class':nth-child('order number of child class'){} - This allows you to
   select all child classes of a parent.
+
+Learnt to use media queries: These are used to apply breakpoints in a webpage at
+different screen sizes to build responsive web pages.
+  ```css
+  @media (query) {}
+  ```
+Here, inside the (query) field, you declare the screen size. Similarly, you
+write the change you want in CSS inside the curly braces"{}"
 
 
 ### Continued development
