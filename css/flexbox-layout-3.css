@@ -172,7 +172,7 @@ p{
   }
 }
 
-@media (max-width:25em) {
+@media (max-width:26em) {
   .content h1{
     font-size: 3em;
   }
@@ -187,26 +187,33 @@ p{
 
 .flex-item{
   background-color: rgb(219, 159, 154);
-  flex: 0 1 33.33%;
-}
-
-.flex-sub-item{
-  flex: 0 1 50%;
 }
 
 .flex-item:nth-child(1){
-  background-image: url(../img/radhe-shyam-2.jpg);
+  flex: 0 1 66.66%;
 }
 
 .flex-item:nth-child(2){
-  flex-direction: column;
+  flex: 0 1 33.33%;
+}
+
+.flex-item>*, .flex-mini-item{
+  flex: 0 1 50%;
 }
 
 .flex-sub-item:nth-child(1){
-  background-image: url(../img/krishna.jpg);
+  background-image: url(../img/radhe-shyam-2.jpg);
 }
 
 .flex-sub-item:nth-child(2){
+  flex-direction: column;
+}
+
+.flex-mini-item:nth-child(1){
+  background-image: url(../img/krishna.jpg);
+}
+
+.flex-mini-item:nth-child(2){
   background-image: url(../img/radharani.jpg);
   background-size: cover;
 }
@@ -216,6 +223,7 @@ p{
   flex-direction: column;
   gap: 2em;
   justify-content: center;
+  flex-grow:1;
 }
 
 h2{
@@ -231,6 +239,20 @@ h2{
   .services{
     flex-direction: column;
   }
+
+  .flex-item:nth-child(1){
+    min-height: 36em;
+  }
+}
+
+@media (max-width: 40em) {
+  .flex-item:nth-child(1){
+    flex-direction: column;
+  }
+
+  .flex-sub-item, .flex-mini-item{
+    min-height: 26em;
+  }
 }
 
 /*styling section 3*/
@@ -238,15 +260,19 @@ h2{
   min-height: 40vh;
   background-color: rgb(219, 159, 154);
   justify-content: center;
+  align-items:center;
   text-align: center;
 }
 
 .section-3 p{
   font-weight: bold;
   font-size: 2em;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 75%;
+  flex: 0 1 75%;
 }
 
+@media (max-width:40em) {
+  .section-3 p{
+    font-size: 1.5em;
+  }
+}
 /**/
