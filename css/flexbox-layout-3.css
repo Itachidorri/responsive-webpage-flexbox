@@ -1,4 +1,8 @@
 /* resetting all margins and paddings */
+:root{
+  --bg-pink: rgb(219, 159, 154);
+}
+
 *{
   margin:0;
   padding: 0;
@@ -186,7 +190,7 @@ p{
 }
 
 .flex-item{
-  background-color: rgb(219, 159, 154);
+  background-color: var(--bg-pink);
 }
 
 .flex-item:nth-child(1){
@@ -258,7 +262,7 @@ h2{
 /*styling section 3*/
 .section-3{
   min-height: 40vh;
-  background-color: rgb(219, 159, 154);
+  background-color: var(--bg-pink);
   justify-content: center;
   align-items:center;
   text-align: center;
