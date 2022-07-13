@@ -23,7 +23,7 @@
   flex-basis: 6em;
 }
 
-.page-padding,.page-margin{
+.page-padding{
   padding: 3.8em min(6vw,4em);
 }
 
