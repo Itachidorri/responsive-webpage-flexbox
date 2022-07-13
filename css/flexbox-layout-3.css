@@ -1,6 +1,7 @@
 /* resetting all margins and paddings */
 :root{
-  --bg-pink: rgb(219, 159, 154);
+  --primary-clr: rgb(184, 217, 210);
+  --secondary-clr: rgb(219, 159, 154);
 }
 
 *{
@@ -75,7 +76,7 @@ body{
 
 /*styling header section*/
 header{
-  background-color: rgb(184, 217, 210);
+  background-color: var(--primary-clr);
 }
 
 .flex-container{
@@ -190,7 +191,7 @@ p{
 }
 
 .flex-item{
-  background-color: var(--bg-pink);
+  background-color: var(--secondary-clr);
 }
 
 .flex-item:nth-child(1){
@@ -262,7 +263,7 @@ h2{
 /*styling section 3*/
 .section-3{
   min-height: 40vh;
-  background-color: var(--bg-pink);
+  background-color: var(--secondary-clr);
   justify-content: center;
   align-items:center;
   text-align: center;
